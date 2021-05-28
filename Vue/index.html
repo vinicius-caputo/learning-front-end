@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue </title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div class="nav-bar"></div>
+    <div id="app">
+
+      <div class="product">
+    
+        <div class="product-image">
+          <img v-bind:src="image1" />
+        </div>
+    
+        <div class="product-info">
+          <h1><a :href="link1">{{ produto }}</a></h1>
+          <p v-if="quantidade">Em estoque</p>
+          <p v-else>Sem estoque</p>
+
+          <ul>
+            <li v-for="detalhe in descricao">{{detalhe}}</li>
+          </ul>
+
+          <div v-for="variant in variants" 
+            :key="variant.variantId"
+            class="color-box"
+            v-bind:style="{backgroundColor: variant.variantColor}"
+            @mouseover="updateProduct(variant.variantImage)">
+          </div>
+    
+          <button v-on:click="addToCart" 
+          :disabled="!quantidade"
+          :class="{disabledButton: !quantidade}">Addiconar ao carrinho</button>
+          <div class="cart">
+            <p>Cart({{ cart }})</p>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

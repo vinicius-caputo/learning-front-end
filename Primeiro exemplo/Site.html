@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>Primeiro site</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="">
+        <style  type="text/css" media="all">
+            *{
+                font-size: 20px;
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                width: 100vw;
+                height: 10vh;
+                background-size: 600px auto;
+                background-image: url(image/background.jpg);
+                box-sizing: border-box;
+                justify-content: space-around;
+                
+            }
+            a:link{
+                color: black;
+            }
+            a:visited{
+                color: black;
+            }
+            a:hover{
+                color: whitesmoke;
+            }
+            nav{
+                width: 100vw;
+                height: 10vh;
+                background-color: rgba(36, 129, 182, 0.623);;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+            nav ul li{
+                display: inline-block;
+                justify-content: space-around;
+            }
+            #primeira {
+                background-image: url(image/background.jpg);
+                background-size: 600px auto;
+                width: 100vw;
+                height: 90vh;
+                //border: 2px solid fuchsia;
+                box-sizing: border-box;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            #segunda {
+                background-image: url(image/background.jpg);
+                background-size: 600px auto;
+                width: 100vw;
+                height: 100vh;
+                //border: 2px solid fuchsia;
+                box-sizing: border-box;
+
+            }
+            #terceira {
+                background-image: url(image/background.jpg);
+                background-size: 600px auto;
+                width: auto;
+                height: 100vh;
+                //border: 2px solid fuchsia;
+                box-sizing: border-box;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            #bloco_1{
+                box-sizing: border-box;
+                display: inline-block;
+                background-color: rgba(36, 129, 182, 0.623);
+                width:  300px;
+                height: 400px;
+                padding: 20px;
+                border: 2px solid black;
+                text-align: center;
+                overflow: auto;
+            }
+            #bloco_2{
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgba(36, 129, 182, 0.89);
+                width:  100vw;
+                height: 100vh;
+
+            }
+            #foguete{
+                position: relative;
+                top: 10%;
+                bottom: 10%;
+            }
+            ul li{
+                position: relative;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            
+            <nav id="menu">
+                <ul>
+                    <li> <h1><a href="#primeira">Home</a></h1></li>
+                    <li><a href="#segunda">Quem somos?</a></li>
+                    <li><a href="#terceira">Links</a></li>
+                </ul>
+            </nav>
+        </header>
+            <section id="primeira">
+                <div id="bloco_1">
+                    <h1>Titulo 01</h1>
+                    <br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam aliquam quisquam, voluptatibus odit culpa, totam molestias laboriosam iste neque cum quod excepturi consequuntur consectetur dolorum atque aspernatur, optio pariatur. Perspiciatis.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam aliquam quisquam, voluptatibus odit culpa, totam molestias laboriosam iste neque cum quod excepturi consequuntur consectetur dolorum atque aspernatur, optio pariatur. Perspiciatis.</p>
+                </div>
+            </section>
+            <section id="segunda">
+                <div id="bloco_2">
+                    <img id="foguete" src="image/foguete-espacial-3d-com-fumaca_23-2148938939-removebg-preview.png" alt="foguete">
+                    <ul>
+                        <h1>LIsta</h1>
+                        <br>
+                        <li>Lorem ipsum dolor sit</li>
+                        <br>
+                        <li> amet consectetur adipisicing elit. Rem, </li>
+                        <br>
+                        <li>nulla. Dolorum quibusdam ipsa ea a</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="terceira">
+
+            </section>
+    </body>
+</html>
